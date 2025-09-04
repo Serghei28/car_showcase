@@ -21,7 +21,7 @@ const Navbar = () => {
 
             <CustomButton
                   title="Sign in"
-                  containerStyles="bg-white text-gray rounded-full px-6 py-2"
+                  containerStyles="bg-white text-gray-30 rounded-full px-6 py-2"
                   handleClick={() => { } } btnType={'button'}/>
 
         </nav>
