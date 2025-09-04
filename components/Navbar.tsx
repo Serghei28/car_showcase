@@ -20,11 +20,9 @@ const Navbar = () => {
             </Link>
 
             <CustomButton
-                title="Sign In"
-                btnType="button"
-                containerStyles="text-primary-blue bg-white min-w-[130px] rounded-full"
-                handleClick={() => {}}
-            />
+                  title="Sign in"
+                  containerStyles="bg-white text-gray rounded-full px-6 py-2"
+                  handleClick={() => { } } btnType={'button'}/>
 
         </nav>
         
