@@ -11,7 +11,7 @@ const CustomButton = ({ title, containerStyles, handleClick, btnType, textStyles
   className={`custom-btn flex items-center justify-center gap-2 ${containerStyles}`}
   onClick={handleClick}
 >
-  <span className={`text-white ${textStyles}`}>
+  <span className={` ${textStyles}`}>
     {title}
   </span>
   {rightIcon && (

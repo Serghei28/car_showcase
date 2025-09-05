@@ -5,6 +5,7 @@ import Image from "next/image";
 import { fetchCars } from "@/utils";
 import CarCard from "@/components/CarCard";
 import { fuels, yearsOfProduction } from "@/constants";
+import ShowMore from "@/components/ShowMore";
 
 
 export default async function Home({ searchParams }: { searchParams: Promise<any> }) {
@@ -46,9 +47,11 @@ export default async function Home({ searchParams }: { searchParams: Promise<any
             {allCars?.map((car) => (
   <CarCard car={car} />
 ))}
-
-
             </div>
+            <ShowMore
+            pageNumber={ (params.limit || 10) / 10}
+            isNext={ (params.limit || 10) > allCars.length}
+            />
           </section>
         ):(
           <div className="home__error-container">
